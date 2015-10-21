@@ -2,7 +2,7 @@
 
 <ul class="list-group">
   {{#each model as |past-calc|}}
-    <li class="list-group-item">{{past-calc.equation}}</li>
+    <li class="list-group-item">{{past-calc.equation}} = {{past-calc.result}}</li>
   {{/each}}
 </ul>
 {{outlet}}

@@ -1,5 +1,12 @@
 <h2> Calculator</h2>
 
 {{calc-gui passedEquation=model.equation eval=(action 'evaluateEquation')}}
-<span> = <b>{{model.result}}</b></span>
+<br>
+<ul class="list-group">
+  {{#each oldEquations as |past-calc|}}
+    {{#if past-calc.result}}
+      <li class="list-group-item">{{past-calc.equation}} = {{past-calc.result}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
 {{outlet}}

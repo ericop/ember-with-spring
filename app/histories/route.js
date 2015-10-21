@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model () {
-      return this.store.findAll('calculation');
+      return this.store.findAll('calculation', { reload: true });
     }
 });
