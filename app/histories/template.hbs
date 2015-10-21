@@ -1,0 +1,8 @@
+<h2>Histories</h2>
+
+<ul class="list-group">
+  {{#each model as |past-calc|}}
+    <li class="list-group-item">{{past-calc.equation}}</li>
+  {{/each}}
+</ul>
+{{outlet}}

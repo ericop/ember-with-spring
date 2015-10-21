@@ -1,0 +1,9 @@
+<label>Enter your Equation</label>
+<div class="input-group">
+  {{input value=equation class='form-control'  type='text' equation=passedEquation enter='eval'}}
+  <span class="input-group-btn">
+      <button class='btn' {{action 'eval' equation}}>=
+      </button>
+  </span>
+</div>
+<span>{{equation}}</span>
