@@ -1,6 +1,6 @@
 # Ember-math
 
-This README outlines the details of collaborating on this Ember application.
+Check out [ember-data-hal-adapter](https://github.com/locks/ember-data-hal-adapter/blob/master/dist/named-amd/main.js)
 A short introduction of this app could easily go here.
 
 ## Prerequisites
