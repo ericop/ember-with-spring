@@ -1,1 +1,9 @@
+<div style='border: solid 1px blue; padding: 1em;'>
+    <h4>For model# {{model.id}}</h4>
+    <p>- The equation was '{{model.equation}}'</p>
+    <p>- And result was '{{model.result}}</p>
+    {{#link-to 'calculator' tagName='button' class='btn btn-warning'}}
+      OK
+    {{/link-to}}
+</div>
 {{outlet}}

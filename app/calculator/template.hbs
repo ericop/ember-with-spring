@@ -5,7 +5,11 @@
 <ul class="list-group">
   {{#each oldEquations as |past-calc|}}
     {{#if past-calc.result}}
-      <li class="list-group-item">{{past-calc.equation}} = {{past-calc.result}}</li>
+        <li class="list-group-item">
+          {{#link-to 'calculator.calculation' past-calc.id tagName='button' class='btn'}}
+             {{past-calc.equation}} = {{past-calc.result}}
+          {{/link-to}}
+        </li>
     {{/if}}
   {{/each}}
 </ul>

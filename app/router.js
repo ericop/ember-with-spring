@@ -11,7 +11,7 @@ Router.map(function() {
   });
   this.route('calculator', {}, function() {
     this.route('calculation', {
-      resetNamespace: true,
+      //resetNamespace: true,
       path: 'calculator/:calculation_id'
     }, function() {
       this.route('delete', {});
